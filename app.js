@@ -6,7 +6,7 @@ import login from "./controller/auth/login.js";
 import validatorResponse from "./middleware/validatorResponse.js";
 import { check } from "express-validator";
 import isAuthenticated from "./middleware/isAuthenticated.js";
-import cardInformation from "./controller/user/CardInformation.js";
+import cardInformation from "./controller/auth/cardInformation.js";
 import Update from "./controller/user/update.js";
 import logout from "./controller/auth/logout.js";
 
