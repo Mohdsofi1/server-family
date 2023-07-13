@@ -5,7 +5,6 @@ const getUsername = async (req, res) => {
   const dbRes = await query("SELECT * FROM users WHERE username=$1", [
     username,
   ]);
-
   if (dbRes.rows.length === 0) {
     const notFoundRes = {
       massage: "No users found",
