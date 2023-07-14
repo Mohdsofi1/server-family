@@ -27,7 +27,6 @@ const login = async (req, res) => {
         id: user.id,
         username: user.username,
         email: user.email,
-        isAdmin: user.isadmin,
       });
       const serverRes = {
         massage: "Login successfull",
