@@ -42,6 +42,6 @@ app.get("/api/users", isAuthenticated, listUsers);
 app.get("/api/:username", isAuthenticated, getUsername);
 app.post("/api/card", isAuthenticated, cardInformation);
 app.put("/api/update", Update);
-app.get("/logout", logout);
+app.get("/api/logout", logout);
 
 export default app;
