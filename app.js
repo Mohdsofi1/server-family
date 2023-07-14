@@ -9,9 +9,11 @@ import isAuthenticated from "./middleware/isAuthenticated.js";
 import cardInformation from "./controller/auth/cardInformation.js";
 import Update from "./controller/user/update.js";
 import logout from "./controller/auth/logout.js";
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.status(200).json({ status: "ok family" });
