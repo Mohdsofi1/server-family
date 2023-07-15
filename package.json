@@ -22,7 +22,9 @@
     "pg": "^8.11.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
     "babel-cli": "^6.26.0",
+    "babel-jest": "^29.6.1",
     "babel-preset-env": "^1.7.0",
     "jest": "^29.6.1",
     "superagent": "^8.0.9",
